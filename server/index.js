@@ -8,15 +8,15 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../client/index.html'))
 })
 
 app.get('/css', function(req, res){
-    res.sendFile(path.join(__dirname, '../styles.css'))
+    res.sendFile(path.join(__dirname, '../client/styles.css'))
 })
 
 app.get('/js', function(req, res){
-    res.sendFile(path.join(__dirname, '../main.js'))
+    res.sendFile(path.join(__dirname, '../index/main.js'))
 })
 
 
