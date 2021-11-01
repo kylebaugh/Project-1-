@@ -11,11 +11,11 @@ app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
-app.get('/', function(req, res){
+app.get('/css', function(req, res){
     res.sendFile(path.join(__dirname, '../styles.css'))
 })
 
-app.get('/', function(req, res){
+app.get('/js', function(req, res){
     res.sendFile(path.join(__dirname, '../main.js'))
 })
 
