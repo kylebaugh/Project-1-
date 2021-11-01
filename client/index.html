@@ -12,23 +12,27 @@
         <img src="https://i.postimg.cc/Yqtw014s/Zoltar.jpg">
         <h2>Zoltar says...</h2>
         <input id="user-input" type="input">
-        <input id="button" type="button" value="submit" onclick="response()">
+        <input id="button" type="button" value="submit" onclick="response()" onmousedown="audio.play();">
         <p id="response"></p>
     </div>
     <script>
         function response(){
             var list = [
-                'You will be a billionare',
-                'Watch for your health, more vitamins',
-                'Love of your life is on the way',
-                'Youll go to Mars',
+                'You will be a failure',
+                'Watch for your health, less cigarettes',
+                'Love of your life is already dead',
+                'Youll go to Mars, and die',
                 'Nothing Special...',
             ];
             var number = Math.floor(Math.random()*5);
             document.getElementById("response").innerHTML = list[number];
         };
     </script>
+    <script type="text/javascript">
+    const audio = new Audio();
+    audio.src = 'magicbell.wav';
+    </script>
 </body>
-<!-- <script src="main.js"></> -->
+<script src="main.js"></script>
 
 </html>
