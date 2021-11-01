@@ -8,7 +8,7 @@
     <title>Fortune Teller</title>
 </head>
 <body>
-    <embed class ='player' src="horrormusic.mp3" loop="true" hidden='true' autostart="true" height="1" width="">
+    <embed class ='player' src="horrormusic.mp3" loop="true" hidden='true' autostart="true" height="150" width="150">
     <div id= "box">
         <img src="https://i.postimg.cc/Yqtw014s/Zoltar.jpg">
         <h2>Zoltars Fortune</h2>
@@ -25,10 +25,9 @@
                 'Nothing Special...',
                 'You will always be last place',
                 'youll always be alone',
-                'youll never succeed in web dev, then die',
+                'youll never succeed in web dev, and then die',
                 'youre adopted',
                 'your parents dont love you'
-                
             ];
             var number = Math.floor(Math.random()*5);
             document.getElementById("response").innerHTML = list[number];
